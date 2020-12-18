@@ -1,4 +1,5 @@
-# Gromgit New-life
+# gromgit's Tap of New Life
+This Homebrew tap hosts formulae that no longer met Homebrew guidelines, and were therefore removed from the core tap.
 
 ## How do I install these formulae?
 `brew install gromgit/new-life/<formula>`
