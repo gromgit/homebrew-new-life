@@ -9,6 +9,13 @@ class Unrar < Formula
     regex(/href=.*?unrarsrc[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-6.0.3"
+    cellar :any
+    sha256 "dd5734a40ad334e900f184b54adc0e074524b570b209e133359b608f379135aa" => :catalina
+    sha256 "031641d3f3363c1d6bccd30f248e3ebcbd5f1c22434089464708aae4d5462bf0" => :x86_64_linux
+  end
+
   def install
     # upstream doesn't particularly care about their unix targets,
     # so we do the dirty work of renaming their shared objects to
