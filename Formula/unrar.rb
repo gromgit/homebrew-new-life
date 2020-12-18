@@ -1,8 +1,8 @@
 class Unrar < Formula
   desc "Extract, view, and test RAR archives"
   homepage "https://www.rarlab.com/"
-  url "https://www.rarlab.com/rar/unrarsrc-6.0.2.tar.gz"
-  sha256 "81bf188333f89c976780a477af27f651f54aa7da9312303d8d1a804696d3edd3"
+  url "https://www.rarlab.com/rar/unrarsrc-6.0.3.tar.gz"
+  sha256 "1def53392d879f9e304aa6eac1339cf41f9bce1111a2f5845071665738c4aca0"
 
   livecheck do
     url "https://www.rarlab.com/rar_add.htm"
@@ -13,7 +13,9 @@ class Unrar < Formula
     # upstream doesn't particularly care about their unix targets,
     # so we do the dirty work of renaming their shared objects to
     # dylibs for them.
-    inreplace "makefile", "libunrar.so", "libunrar.dylib"
+    on_macos do
+      inreplace "makefile", "libunrar.so", "libunrar.dylib"
+    end
 
     system "make"
     bin.install "unrar"
