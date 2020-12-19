@@ -14,6 +14,7 @@ class Unrar < Formula
     cellar :any
     sha256 "19d9fd2066fdc720bda1d6396b5b6fef613234cd3391f19d8455094bff7b6b74" => :big_sur
     sha256 "dd5734a40ad334e900f184b54adc0e074524b570b209e133359b608f379135aa" => :catalina
+    sha256 "c1c434c6ead4d02ea7a970335c9e040c01088306e173399ca1b5b0a67766934b" => :mojave
     sha256 "031641d3f3363c1d6bccd30f248e3ebcbd5f1c22434089464708aae4d5462bf0" => :x86_64_linux
   end
 
