@@ -11,6 +11,7 @@ It depends:
 * I don't do versioned formulae, so don't expect to see any formula with `@` in its name.
 * I may not be interested in `<formula_or_cask>`.
 * I may be interested in `<formula_or_cask>`, but simply haven't gotten around to it.
+* FUSE-related formulae/casks are in [another tap](https://github.com/gromgit/homebrew-fuse)
 
 If you'd like to see something here, [file an issue](https://github.com/gromgit/homebrew-new-life/issues/new/choose) and I'll take a look.
 
