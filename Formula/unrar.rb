@@ -11,7 +11,8 @@ class Unrar < Formula
 
   bottle do
     root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-6.0.5"
-    sha256 cellar: :any, big_sur: "22f9c72242f9a9f32628944430b1de32b7eff52ae1fcc0a114a0917e45ceeaa8"
+    sha256 cellar: :any, big_sur:  "22f9c72242f9a9f32628944430b1de32b7eff52ae1fcc0a114a0917e45ceeaa8"
+    sha256 cellar: :any, catalina: "33c4d64e2387ffd7f3d1470e576b4df813769bde25c7e71701bdcc86b4584b26"
   end
 
   def install
