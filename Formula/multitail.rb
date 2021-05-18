@@ -18,9 +18,7 @@ class Multitail < Formula
 
   def install
     makeargs = []
-    if OS.mac?
-      makeargs = %W[-f makefile.macosx]
-    end
+    makeargs = %w[-f makefile.macosx] if OS.mac?
     system "make", *makeargs, "multitail", "DESTDIR=#{HOMEBREW_PREFIX}"
 
     bin.install "multitail"
