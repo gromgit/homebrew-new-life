@@ -38,7 +38,7 @@ class Rsstail < Formula
       # libiconv is folded into libc in Linux
       ""
     end
-      
+
     system "make", "LDFLAGS=#{libiconv}-liconv_hook -lmrss -L#{buildpath}/libiconv_hook/lib/.libs"
     man1.install "rsstail.1"
     bin.install "rsstail"
