@@ -1,8 +1,8 @@
 class Unrar < Formula
   desc "Extract, view, and test RAR archives"
   homepage "https://www.rarlab.com/"
-  url "https://www.rarlab.com/rar/unrarsrc-6.0.5.tar.gz"
-  sha256 "7e34064c9e97464462c81aed80c25619149f71d4900995021780787f51dd63f0"
+  url "https://www.rarlab.com/rar/unrarsrc-6.0.6.tar.gz"
+  sha256 "011ef7290d3394a62bb5bfced914cd510a7eea7255cf69417f9c952bb6056588"
 
   livecheck do
     url "https://www.rarlab.com/rar_add.htm"
@@ -10,11 +10,8 @@ class Unrar < Formula
   end
 
   bottle do
-    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-6.0.5"
-    sha256 cellar: :any,                 big_sur:      "22f9c72242f9a9f32628944430b1de32b7eff52ae1fcc0a114a0917e45ceeaa8"
-    sha256 cellar: :any,                 catalina:     "33c4d64e2387ffd7f3d1470e576b4df813769bde25c7e71701bdcc86b4584b26"
-    sha256 cellar: :any,                 mojave:       "d58759a52db57505e445974f035ba1722572f75608c85a99259fc9d5f35c91cf"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "15f1dda2a2e79e582ed3e15dc84a319f1f51eb668ed8d02a1e0fecfe0b2a286a"
+    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-6.0.6"
+    sha256 cellar: :any, big_sur: "53e69bc0b8b1173b1ab1dff9708534f90f753049a4cc88ec8f8857cd8b0dc789"
   end
 
   def install
