@@ -12,9 +12,10 @@ class Rsstail < Formula
 
   bottle do
     root_url "https://github.com/gromgit/homebrew-new-life/releases/download/rsstail-1.8"
-    sha256 cellar: :any, big_sur:  "2170b49282c6c9ab5698705e6e67af8946922452d887718b7c188cd15d9532fc"
-    sha256 cellar: :any, catalina: "450e521bb6dd8e93fd4b6f69642ccccb37d8fbbaf7a1dfcae75edf0a92fc548f"
-    sha256 cellar: :any, mojave:   "da50da0537b8dd5a3fe43c83e5cb044c5cb33b99a0d11ea908f0ab19cc882b1e"
+    sha256 cellar: :any,                 big_sur:      "2170b49282c6c9ab5698705e6e67af8946922452d887718b7c188cd15d9532fc"
+    sha256 cellar: :any,                 catalina:     "450e521bb6dd8e93fd4b6f69642ccccb37d8fbbaf7a1dfcae75edf0a92fc548f"
+    sha256 cellar: :any,                 mojave:       "da50da0537b8dd5a3fe43c83e5cb044c5cb33b99a0d11ea908f0ab19cc882b1e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "49dd12f6b38129acf4cc9c44fb619677b484992b176d85993835302009de71ce"
   end
 
   depends_on "libmrss"
@@ -31,7 +32,14 @@ class Rsstail < Formula
       system "make"
     end
 
-    system "make", "LDFLAGS=-liconv -liconv_hook -lmrss -L#{buildpath}/libiconv_hook/lib/.libs"
+    libiconv = if OS.mac?
+      "-liconv "
+    else
+      # libiconv is folded into libc in Linux
+      ""
+    end
+      
+    system "make", "LDFLAGS=#{libiconv}-liconv_hook -lmrss -L#{buildpath}/libiconv_hook/lib/.libs"
     man1.install "rsstail.1"
     bin.install "rsstail"
   end
