@@ -8,7 +8,8 @@ class Httping < Formula
 
   bottle do
     root_url "https://github.com/gromgit/homebrew-new-life/releases/download/httping-2.5"
-    sha256 cellar: :any, big_sur: "d6b14a4d2f6386a0812ee9d8e4fa36dde6c7df9aa96e278ac90668de5c857814"
+    sha256 cellar: :any, big_sur:  "d6b14a4d2f6386a0812ee9d8e4fa36dde6c7df9aa96e278ac90668de5c857814"
+    sha256 cellar: :any, catalina: "ba381b9908696c1460e88b59e1b8b09a1cada2021fd2d12cc10a67d838375332"
   end
 
   depends_on "gettext"
