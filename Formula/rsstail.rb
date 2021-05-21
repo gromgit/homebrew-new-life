@@ -1,8 +1,8 @@
 class Rsstail < Formula
   desc "Monitors an RSS feed and emits new entries when detected"
   homepage "https://web.archive.org/web/20200412143745/www.vanheusden.com/rsstail/"
-  url "https://deb.debian.org/debian/pool/main/r/rsstail/rsstail_1.8.orig.tar.gz"
-  sha256 "19284f3eca4bfa649f53848e19e6ee134bce17ccf2a22919cc8c600684877801"
+  url "https://web.archive.org/web/20200412143745/www.vanheusden.com/rsstail/rsstail-2.1.tgz"
+  sha256 "98df3e9dff48e1d177eb5188fe9341c3d93f6742cd3e4b225c202aa5c340e772"
   license "GPL-2.0-only"
 
   livecheck do
@@ -11,11 +11,8 @@ class Rsstail < Formula
   end
 
   bottle do
-    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/rsstail-1.8"
-    sha256 cellar: :any,                 big_sur:      "2170b49282c6c9ab5698705e6e67af8946922452d887718b7c188cd15d9532fc"
-    sha256 cellar: :any,                 catalina:     "450e521bb6dd8e93fd4b6f69642ccccb37d8fbbaf7a1dfcae75edf0a92fc548f"
-    sha256 cellar: :any,                 mojave:       "da50da0537b8dd5a3fe43c83e5cb044c5cb33b99a0d11ea908f0ab19cc882b1e"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "49dd12f6b38129acf4cc9c44fb619677b484992b176d85993835302009de71ce"
+    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/rsstail-2.1"
+    sha256 cellar: :any, big_sur: "6338fffca791654e11d3c996a47ebe6527830957dbaa210f8fbcdb09904c19e9"
   end
 
   depends_on "libmrss"
