@@ -1,8 +1,8 @@
 class Unrar < Formula
   desc "Extract, view, and test RAR archives"
   homepage "https://www.rarlab.com/"
-  url "https://www.rarlab.com/rar/unrarsrc-6.0.7.tar.gz"
-  sha256 "a7029942006cbcced3f3b7322ec197683f8e7be408972ca08099b196c038f518"
+  url "https://www.rarlab.com/rar/unrarsrc-6.1.5.tar.gz"
+  sha256 "4e56717d867cdff7a0008b7f1da6aa79ac7a8f974cf134d49a8c16b577bced4a"
 
   livecheck do
     url "https://www.rarlab.com/rar_add.htm"
@@ -10,20 +10,15 @@ class Unrar < Formula
   end
 
   bottle do
-    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-6.0.7"
-    sha256 cellar: :any,                 big_sur:      "68d61b49dee60cd19a53f7a9386bbf93e8a5e6d27d1bcdb5342507c64ca937e4"
-    sha256 cellar: :any,                 catalina:     "8dc9817d259fbf6ca82c946e2cc3df09fa1981a03105f46ece89394682c3b8b0"
-    sha256 cellar: :any,                 mojave:       "2deef754740cfb0b28f7dadd760112d89dcb1c7326efe86fb6fe538927d3294d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "3a9e46a65e879f818ed742e14f4117d5b49f11509b50357847c499a04064a82d"
+    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-6.1.5"
+    sha256 cellar: :any, arm64_monterey: "a339f0e9f68e74b590d5d0d2a87f2e04fe3f29d894c2d44c6f87cada656ed6ef"
   end
 
   def install
     # upstream doesn't particularly care about their unix targets,
     # so we do the dirty work of renaming their shared objects to
     # dylibs for them.
-    on_macos do
-      inreplace "makefile", "libunrar.so", "libunrar.dylib"
-    end
+    inreplace "makefile", "libunrar.so", "libunrar.dylib" if OS.mac?
 
     system "make"
     bin.install "unrar"
