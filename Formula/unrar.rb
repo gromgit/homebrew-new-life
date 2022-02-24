@@ -13,6 +13,7 @@ class Unrar < Formula
     root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-6.1.5"
     sha256 cellar: :any, arm64_monterey: "a339f0e9f68e74b590d5d0d2a87f2e04fe3f29d894c2d44c6f87cada656ed6ef"
     sha256 cellar: :any, monterey:       "2e895f2391b7db2b61bc2861aaeebc235de0c250289b945ee37d18a5f89e6a38"
+    sha256 cellar: :any, big_sur:        "eb57e242820cb8c9b8f2ce6200f4f1cf15b287056a23563ef97971b007efc50b"
   end
 
   def install
