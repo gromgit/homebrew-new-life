@@ -15,6 +15,7 @@ class Unrar < Formula
     sha256 cellar: :any, monterey:       "f1c9ddb6b88253da148920034b89878e5628df47ab7e5899c11a9a969605cd1f"
     sha256 cellar: :any, big_sur:        "ef51322b8c24a1ddadeb3a6650d28f21915e76dcd4e5cb44958c21d62b014b65"
     sha256 cellar: :any, catalina:       "286ca40bc896d8aa3318efbe6d8cf634f7c0c4e50a500b9f3d8c0567e7be47e5"
+    sha256 cellar: :any, mojave:         "b80c7ee068de9fa9d619ee164358a588a924031d7e4c23de980c3228bd7d7e18"
   end
 
   def install
