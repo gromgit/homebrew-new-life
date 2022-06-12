@@ -13,6 +13,7 @@ class Rsstail < Formula
   bottle do
     root_url "https://github.com/gromgit/homebrew-new-life/releases/download/rsstail-2.1"
     sha256 cellar: :any,                 arm64_monterey: "a3c32ec8504ca0b2e43756fdb0e46bc6a14e27e07de1d892cc59d2f12cadab04"
+    sha256 cellar: :any,                 monterey:       "0796735eb0ce6436becb8a08352a1933efe09efffc42a52a84d0d3485aa04976"
     sha256 cellar: :any,                 big_sur:        "6338fffca791654e11d3c996a47ebe6527830957dbaa210f8fbcdb09904c19e9"
     sha256 cellar: :any,                 catalina:       "7299888957f771fd6835b7999b49135be7bd3ee584d1d8cb06363e2d0ffe3fe1"
     sha256 cellar: :any,                 mojave:         "ac2dce4d3128a835284f8a058d0c7a73385ba2a7a78c9798584ff2d0800dd354"
