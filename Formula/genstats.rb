@@ -8,6 +8,7 @@ class Genstats < Formula
   bottle do
     root_url "https://github.com/gromgit/homebrew-new-life/releases/download/genstats-1.2"
     sha256 cellar: :any_skip_relocation, arm64_monterey: "6b72081733a7c87ac2c021814f6ca8a106cef851a481821214d4880a9441731a"
+    sha256 cellar: :any_skip_relocation, monterey:       "fe6bc14e194ffd9e4b85f1393ba6adf8c33b27427932c884b0c60462b5ee740d"
     sha256 cellar: :any_skip_relocation, big_sur:        "e98102ff77ed777a5632fc7cc48a93b52c9b3098e9d11e389af97dd2b23ab0d7"
     sha256 cellar: :any_skip_relocation, catalina:       "231d0bf12f4136a79252269c26be58df088e747e7d687531907edb30e8a3866c"
     sha256 cellar: :any_skip_relocation, mojave:         "f5c2dc4eb62bc3668475fb762810221d0586a7e9cfd0c78a990788b1bb244b36"
