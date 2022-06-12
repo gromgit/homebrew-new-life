@@ -7,10 +7,11 @@ class Multitail < Formula
 
   bottle do
     root_url "https://github.com/gromgit/homebrew-new-life/releases/download/multitail-6.5.0"
-    sha256 cellar: :any,                 big_sur:      "63c58d62f56420d226b576d530142471d54067fdb3fc4c71b4889b00e1501449"
-    sha256 cellar: :any,                 catalina:     "c6b37d0c8d3217a1fcc4d79a48c555af01209d83b78510f026490274b5fe58e3"
-    sha256 cellar: :any,                 mojave:       "f4ef1c44131cea1677f591344e09d96459919d103576fb41f801682296cd629d"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "acfa846598c4840ae4798c5b9af3dfb6ee950158638125a55e8dd7b595cfe311"
+    sha256 cellar: :any,                 arm64_monterey: "d8c938b0ee9243615db6b38027c7bc97db3c3bdd88aa3c11106bf9df211bf470"
+    sha256 cellar: :any,                 big_sur:        "63c58d62f56420d226b576d530142471d54067fdb3fc4c71b4889b00e1501449"
+    sha256 cellar: :any,                 catalina:       "c6b37d0c8d3217a1fcc4d79a48c555af01209d83b78510f026490274b5fe58e3"
+    sha256 cellar: :any,                 mojave:         "f4ef1c44131cea1677f591344e09d96459919d103576fb41f801682296cd629d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:   "acfa846598c4840ae4798c5b9af3dfb6ee950158638125a55e8dd7b595cfe311"
   end
 
   depends_on "pkg-config" => :build
