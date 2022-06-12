@@ -1,8 +1,8 @@
 class Unrar < Formula
   desc "Extract, view, and test RAR archives"
   homepage "https://www.rarlab.com/"
-  url "https://www.rarlab.com/rar/unrarsrc-6.1.6.tar.gz"
-  sha256 "67f4ab891c062218c2badfaac9c8cab5c8bfd5e96dabfca56c8faa3d209a801d"
+  url "https://www.rarlab.com/rar/unrarsrc-6.1.7.tar.gz"
+  sha256 "de75b6136958173fdfc530d38a0145b72342cf0d3842bf7bb120d336602d88ed"
 
   livecheck do
     url "https://www.rarlab.com/rar_add.htm"
@@ -10,12 +10,8 @@ class Unrar < Formula
   end
 
   bottle do
-    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-6.1.6"
-    sha256 cellar: :any, arm64_monterey: "2f6254ec48487d1c93b3ef281f8640ad9c8cea7f2d0abca01a8fefdbb0cd19d1"
-    sha256 cellar: :any, monterey:       "f1c9ddb6b88253da148920034b89878e5628df47ab7e5899c11a9a969605cd1f"
-    sha256 cellar: :any, big_sur:        "ef51322b8c24a1ddadeb3a6650d28f21915e76dcd4e5cb44958c21d62b014b65"
-    sha256 cellar: :any, catalina:       "286ca40bc896d8aa3318efbe6d8cf634f7c0c4e50a500b9f3d8c0567e7be47e5"
-    sha256 cellar: :any, mojave:         "b80c7ee068de9fa9d619ee164358a588a924031d7e4c23de980c3228bd7d7e18"
+    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-6.1.7"
+    sha256 cellar: :any, arm64_monterey: "37bd4996f319c53180ce7cd7944e23e8629238f97377a8cf74caefe39e12ec53"
   end
 
   def install
