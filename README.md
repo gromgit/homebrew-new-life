@@ -12,6 +12,7 @@ It depends:
 * I may not be interested in `<formula_or_cask>`.
 * I may be interested in `<formula_or_cask>`, but simply haven't gotten around to it.
 * FUSE-related formulae/casks are in the [`gromgit/fuse`](https://github.com/gromgit/homebrew-fuse) tap.
+* Truly *dead* formulae (i.e. no longer maintained by upstream) are in the [`gromgit/boneyard`](https://github.com/gromgit/homebrew-boneyard) tap.
 
 If you'd like to see something here, [file an issue](https://github.com/gromgit/homebrew-new-life/issues/new/choose) and I'll take a look.
 
