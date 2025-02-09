@@ -3,15 +3,11 @@ class Unrar < Formula
   homepage "https://www.rarlab.com/"
   url "https://www.rarlab.com/rar/unrarsrc-7.1.3.tar.gz"
   sha256 "f7edb6f55fb53611206781d9e56f2625ef4411a6b129768800196617d9df920a"
+  revision 1
 
   livecheck do
     url "https://www.rarlab.com/rar_add.htm"
     regex(/href=.*?unrarsrc[._-]v?(\d+(?:\.\d+)+)\.t/i)
-  end
-
-  bottle do
-    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-7.1.3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "2446bee1a451a3bb364f5b67687adf661891ca32892ba63ae1463a993d5934da"
   end
 
   def install
