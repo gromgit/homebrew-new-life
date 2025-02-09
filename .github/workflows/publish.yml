@@ -5,8 +5,11 @@ on:
       - labeled
 jobs:
   pr-pull:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, ubuntu-24.04-arm]
     if: contains(github.event.pull_request.labels.*.name, 'pr-pull')
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
