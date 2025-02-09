@@ -10,11 +10,8 @@ class Unrar < Formula
   end
 
   bottle do
-    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-6.1.7"
-    sha256 cellar: :any, arm64_monterey: "37bd4996f319c53180ce7cd7944e23e8629238f97377a8cf74caefe39e12ec53"
-    sha256 cellar: :any, monterey:       "3547dce1a7b27d30bee8a42dc8eb90f3ea544357b54d787ffb03f8b94c6cc62b"
-    sha256 cellar: :any, big_sur:        "d4984985b6bb11722fb47ed237be35b0cb03c7e7a444505273fdd223674ba529"
-    sha256 cellar: :any, catalina:       "da4f285e50b5d1dc29c260e00b56d7c5750b1e59073e15c7c0c09d50a0e21afe"
+    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/unrar-7.1.3"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2446bee1a451a3bb364f5b67687adf661891ca32892ba63ae1463a993d5934da"
   end
 
   def install
