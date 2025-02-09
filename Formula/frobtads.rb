@@ -4,6 +4,11 @@ class Frobtads < Formula
   url "https://github.com/realnc/frobtads/releases/download/v2.0/frobtads-2.0.tar.bz2"
   sha256 "893bd3fd77dfdc8bfe8a96e8d7bfac693da0e4278871f10fe7faa59cc239a090"
 
+  bottle do
+    root_url "https://github.com/gromgit/homebrew-new-life/releases/download/frobtads-2.0"
+    sha256 x86_64_linux: "0ea962afbd067ef9a0f12ce60d88042a5c26d864df3fb0d38928ac4b89bb7d3c"
+  end
+
   depends_on "cmake" => :build
 
   uses_from_macos "curl"
