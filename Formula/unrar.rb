@@ -10,6 +10,13 @@ class Unrar < Formula
     regex(/href=.*?unrarsrc[._-]v?(\d+(?:\.\d+)+)\.t/i)
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/gromgit/new-life"
+    sha256 cellar: :any,                 arm64_sonoma: "59aa0abe2a6e40af1c268bf3287a5ba9ec438d85f245f1b2bfeab08f5b3f434e"
+    sha256 cellar: :any,                 ventura:      "3b5bfa42fae30fc1baf6fa5d31015a12b2c83f2023ec14a5acbd7df635039211"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "519a87616d548f5dd9cad18e1343d3e10dbe1af222261d2ccce50df99b090470"
+  end
+
   def install
     # upstream doesn't particularly care about their unix targets,
     # so we do the dirty work of renaming their shared objects to
