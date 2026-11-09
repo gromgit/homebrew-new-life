@@ -11,11 +11,11 @@ class Unrar < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/gromgit/new-life"
-    rebuild 1
-    sha256 cellar: :any,                 arm64_sequoia: "f16e6cf561b678a37df9d82d0c0813f395c3bbe549955cb7178ed0772cd3802c"
-    sha256 cellar: :any,                 arm64_sonoma:  "fed380e8a79a6e395eee6fe4518d28a597ae65c8edbcf6aee1e9efaaf2137309"
-    sha256 cellar: :any,                 ventura:       "67853dcdf35753ce3739cc798eb0f96d41be011cd85f27b9c1939e0d62012dd5"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a68d0fb11faf3cc3974b1926fbbc7e87b552785a230e27e3c81714b5026fe9ad"
+    sha256 cellar: :any, arm64_golden_gate: "2a76b1e01800a1a46ec50799debfee054f7d061ff32c7aaf7b8d6c6aa9d3206d"
+    sha256 cellar: :any, arm64_tahoe:       "1819d5f95e2a3f9bd2063617340f584cc73301b1cd6068498996f7efd56c6d36"
+    sha256 cellar: :any, arm64_sequoia:     "4b4ee5a01aae47e9b2c3ed2b469580eae074fc926c1703238770a0d6535855bd"
+    sha256 cellar: :any, arm64_linux:       "3661d387a62334fb369bf475bed1288a88be14640172eb73d90e040e392862e3"
+    sha256 cellar: :any, x86_64_linux:      "5886d08457aa84b340a1e5067f1244071e7da8a9583bc52fd09b07a17b5c6e2a"
   end
 
   def install
